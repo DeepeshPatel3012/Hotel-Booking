@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-class StartBoth extends StatelessWidget {
-  const StartBoth({super.key});
+class HomeScreen4 extends StatelessWidget {
+  const HomeScreen4({super.key});
 
   @override
+  
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack( 
       children: [
-      
-        Image.asset("assets/images/image 2.png"),
+        // Image.network("https://images.pexels.com/photos/96444/pexels-photo-96444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Image.asset("assets/images/image 3.png")),
        Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -21,7 +25,7 @@ class StartBoth extends StatelessWidget {
             child: Column(
               spacing: 20,
               children: [
-                Text("Booking Hotel From Any Where ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
+                Text("Thousand Of Hotel Are Founds",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
                 SizedBox(height: 20,),
                 Container(
                   height: 50,

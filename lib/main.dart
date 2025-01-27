@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_booking/Both/both1_0.dart';
+import 'package:hotel_booking/Both/both1_3.dart';
+import 'package:hotel_booking/test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      // home: Both11(),
+      // home: Both13(),
+      
       home: Both10(), //important home
 
       // home: Test(),

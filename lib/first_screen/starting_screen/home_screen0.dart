@@ -1,10 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/Both/both1_1.dart';
+import 'package:hotel_booking/first_screen/starting_screen/home_screen1.dart';
 
-class Both10 extends StatelessWidget {
-  const Both10({super.key});
+class HomeScreen0 extends StatelessWidget {
+  const HomeScreen0({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class Both10 extends StatelessWidget {
               height: 50,
               // decoration: BoxDecoration(color: Colors.black,border: Border.all()),
               child: FloatingActionButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder:(context) => Both11()),);
+                Navigator.push(context, MaterialPageRoute(builder:(context) => HomeScreen1()),);
               },
               
               backgroundColor: Colors.grey,

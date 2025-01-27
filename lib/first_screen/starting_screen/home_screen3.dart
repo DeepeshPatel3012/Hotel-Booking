@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
-class StartBothScreen3 extends StatelessWidget {
-  const StartBothScreen3({super.key});
+class HomeScreen3 extends StatelessWidget {
+  const HomeScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack( 
       children: [
-        // Image.network("https://images.pexels.com/photos/96444/pexels-photo-96444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
-        Image.asset("assets/images/image 3.png"),
+      
+        SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Image.asset("assets/images/image 2.png")),
        Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -21,7 +24,7 @@ class StartBothScreen3 extends StatelessWidget {
             child: Column(
               spacing: 20,
               children: [
-                Text("Thousand Of Hotel Are Founds",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
+                Text("Booking Hotel From Any Where ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
                 SizedBox(height: 20,),
                 Container(
                   height: 50,
