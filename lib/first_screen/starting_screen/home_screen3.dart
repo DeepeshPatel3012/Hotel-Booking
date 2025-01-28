@@ -24,8 +24,10 @@ class HomeScreen3 extends StatelessWidget {
             child: Column(
               spacing: 20,
               children: [
+                SizedBox(height: 5,),
                 Text("Booking Hotel From Any Where ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
-                SizedBox(height: 20,),
+                // SizedBox(height: 20,),
+
                 Container(
                   height: 50,
                   width: 300,

@@ -25,8 +25,9 @@ class HomeScreen4 extends StatelessWidget {
             child: Column(
               spacing: 20,
               children: [
+                SizedBox(height: 5,),
                 Text("Thousand Of Hotel Are Founds",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
-                SizedBox(height: 20,),
+                // SizedBox(height: 20,),
                 Container(
                   height: 50,
                   width: 300,
