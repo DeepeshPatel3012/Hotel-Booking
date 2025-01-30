@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_booking/first_screen/sign_in_screen/sign_in01.dart';
 
 class HomeScreen3 extends StatelessWidget {
   const HomeScreen3({super.key});
@@ -34,8 +35,7 @@ class HomeScreen3 extends StatelessWidget {
                   decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20)),
                  child: Expanded(
                    child: FloatingActionButton(onPressed: (){
-                    Navigator.pop(context);
-                   },
+                          Navigator.push(context, MaterialPageRoute(builder:(context) => SignIn01()));                   },
                          foregroundColor: Colors.deepPurple,
                           child: Text("Create Account",style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold, ),),
                    ),

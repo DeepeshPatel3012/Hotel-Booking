@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_booking/first_screen/sign_in_screen/dilog_box_sign_in.dart';
 import 'package:hotel_booking/first_screen/sign_in_screen/sign_in01.dart';
 import 'package:hotel_booking/first_screen/starting_screen/home_screen0.dart';
 
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       
       
-      // home: HomeScreen0(), //important home
-      home: SignIn01(),
+      home: HomeScreen0(), //important home
+      // home: SignIn01(),
+      // home: DilogBoxSignIn(),
 
       // home: Test(),
     );
