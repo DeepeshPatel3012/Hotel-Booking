@@ -13,7 +13,7 @@ class HomeScreen3 extends StatelessWidget {
         SizedBox(
           height: double.infinity,
           width: double.infinity,
-          child: Image.asset("assets/images/image 2.png")),
+          child: Image.asset("assets/images/image 2.png",fit: BoxFit.cover,)),
        Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

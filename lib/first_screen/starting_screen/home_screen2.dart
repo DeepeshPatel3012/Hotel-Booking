@@ -18,7 +18,7 @@ class _HomeScreen2State extends State<HomeScreen2> {
         SizedBox(
           height: double.infinity,
           width: double.infinity,
-          child: Image.asset("assets/images/image 1.png")),
+          child: Image.asset("assets/images/image 1.png",fit: BoxFit.cover,)),
        Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
