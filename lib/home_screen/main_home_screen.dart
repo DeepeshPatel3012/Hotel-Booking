@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_booking/bar/bottom_bar.dart';
 import 'package:hotel_booking/bar/top_bar.dart';
 import 'package:hotel_booking/home_screen/user_card.dart';
 
@@ -25,10 +26,10 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
               padding: EdgeInsets.all(10),
               itemBuilder: (context, index){
                 return UserCard();
-              
               }
             ),
           ),
+              BottomBar()
 
         ],
       ),
