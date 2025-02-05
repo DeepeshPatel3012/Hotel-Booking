@@ -5,25 +5,42 @@ class BottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(items: [
-     BottomNavigationBarItem(icon: Icon(Icons.home),
-     label: "Home",
-     ),
+    return BottomAppBar(
+      color: Colors.deepPurple,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(children: [
+            IconButton(onPressed: (){},
+             icon: Icon(Icons.home),
+             ),
+             Text("Home",style: TextStyle(fontSize: 10),)
+          ],),
 
-     BottomNavigationBarItem(icon: Icon(Icons.favorite),
-     label: "Favorite",
-     ),
+           Column(children: [
+            IconButton(onPressed: (){},
+             icon: Icon(Icons.favorite),
+             ),
+             Text("Favorite",style: TextStyle(fontSize: 10),)
+          ],),
 
-     BottomNavigationBarItem(icon: Icon(Icons.local_offer),
-     label: "Offer",
-     ),
+           Column(children: [
+            IconButton(onPressed: (){},
+             icon: Icon(Icons.local_offer),
+             ),
+             Text("Offer",style: TextStyle(fontSize: 10),)
+          ],),
 
-     BottomNavigationBarItem(icon: Icon(Icons.account_circle_sharp),
-     label: "Profile",
-     ),
-    ] ,
-    fixedColor: Colors.black ,
-    backgroundColor: Colors.deepPurple,
+           Column(children: [
+            IconButton(onPressed: (){},
+             icon: Icon(Icons.account_circle),
+             ),
+             Text("Profile",style: TextStyle(fontSize: 10),)
+          ],)
+
+        ],
+
+      ),
     );
   }
 }

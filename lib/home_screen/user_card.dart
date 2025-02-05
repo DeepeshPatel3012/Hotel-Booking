@@ -18,7 +18,7 @@ class UserCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 300,
+                height: 250,
                 width: 200,
                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
                 color: Colors.grey),
