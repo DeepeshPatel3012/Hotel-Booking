@@ -19,11 +19,11 @@ class _SignIn01State extends State<SignIn01> {
         },),
        backgroundColor: Colors.deepPurple,
        ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(color: Colors.deepPurple),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(color: Colors.deepPurple),
+        child: SingleChildScrollView(
           child: Column(
             spacing: 10,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -34,7 +34,7 @@ class _SignIn01State extends State<SignIn01> {
                fontWeight: FontWeight.bold,
                color: Colors.white),
                textAlign: TextAlign.left,),
-        
+                
                Text("Start Booking With Creating Account",
                style: TextStyle(color: Colors.white70,
                fontSize: 15,
@@ -81,33 +81,36 @@ class _SignIn01State extends State<SignIn01> {
                  ],
                ),
             SizedBox(height: 10,),
-        
+                
           SizedBox(
             height: 50,
             width: 300,
-            child: FloatingActionButton(onPressed: (){
+            child: OutlinedButton(onPressed: (){
               // Navigator.pop(context);
               Navigator.push(context, MaterialPageRoute(builder:(context) => MainHomeScreen(),));
-        
+                
             },
-            foregroundColor: Colors.deepPurple,
-            backgroundColor: Colors.blueGrey,
-            shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
+            
+            // foregroundColor: Colors.deepPurple,
+            // backgroundColor: Colors.blueGrey,
+            // shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
             child: Text("Create Account",
-            style: TextStyle(color: Colors.white,
+            style: TextStyle(color: Colors.deepPurple,
             fontWeight: FontWeight.bold,
             fontSize: 20,
-             ),),  
+            // background: 
+            ),
+             ),  
             ),
           ),
           
           SizedBox(
             height: 40,
             width: 300,
-            child: FloatingActionButton(onPressed: (){},
+            child: ElevatedButton(onPressed: (){},
             // foregroundColor: Colors.deepPurple,
-            backgroundColor: Colors.blueGrey,
-            shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
+            // backgroundColor: Colors.blueGrey,
+            // shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -117,25 +120,25 @@ class _SignIn01State extends State<SignIn01> {
                 Text("Sign Up With Google",
                 style: TextStyle(color: Colors.white
                 ),),
-        
+                
                 
               ],
             ), 
             ),
           ),
-        
+                
           SizedBox(
             height: 40,
             width: 300,
-            child: FloatingActionButton(onPressed: (){
+            child: ElevatedButton(onPressed: (){
               //  Navigator.pop(context);
               showDialog(context: context, builder:(context){
                 return DilogBoxSignIn();
               });
             },
             // foregroundColor: Colors.deepPurple,
-            backgroundColor: Colors.blueGrey,
-            shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
+            // backgroundColor: Colors.blueGrey,
+            // shape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(20),),),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

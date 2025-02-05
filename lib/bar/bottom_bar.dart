@@ -7,39 +7,41 @@ class BottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       color: Colors.deepPurple,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(children: [
-            IconButton(onPressed: (){},
-             icon: Icon(Icons.home),
-             ),
-             Text("Home",style: TextStyle(fontSize: 10),)
-          ],),
-
-           Column(children: [
-            IconButton(onPressed: (){},
-             icon: Icon(Icons.favorite),
-             ),
-             Text("Favorite",style: TextStyle(fontSize: 10),)
-          ],),
-
-           Column(children: [
-            IconButton(onPressed: (){},
-             icon: Icon(Icons.local_offer),
-             ),
-             Text("Offer",style: TextStyle(fontSize: 10),)
-          ],),
-
-           Column(children: [
-            IconButton(onPressed: (){},
-             icon: Icon(Icons.account_circle),
-             ),
-             Text("Profile",style: TextStyle(fontSize: 10),)
-          ],)
-
-        ],
-
+      child: SingleChildScrollView(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(children: [
+              IconButton(onPressed: (){},
+               icon: Icon(Icons.home),
+               ),
+               Text("Home",style: TextStyle(fontSize: 10),)
+            ],),
+        
+             Column(children: [
+              IconButton(onPressed: (){},
+               icon: Icon(Icons.favorite),
+               ),
+               Text("Favorite",style: TextStyle(fontSize: 10),)
+            ],),
+        
+             Column(children: [
+              IconButton(onPressed: (){},
+               icon: Icon(Icons.local_offer),
+               ),
+               Text("Offer",style: TextStyle(fontSize: 10),)
+            ],),
+        
+             Column(children: [
+              IconButton(onPressed: (){},
+               icon: Icon(Icons.account_circle),
+               ),
+               Text("Profile",style: TextStyle(fontSize: 10),)
+            ],)
+        
+          ],
+        
+        ),
       ),
     );
   }

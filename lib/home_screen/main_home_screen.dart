@@ -29,7 +29,7 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
               }
             ),
           ),
-              BottomBar()
+              SafeArea(child: BottomBar()),
 
         ],
       ),

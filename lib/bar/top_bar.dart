@@ -72,6 +72,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget{
   Widget build(BuildContext context) {
     return 
        AppBar( 
+        
         backgroundColor: Colors.deepPurple,
         leading: Image.asset("assets/images/photo.jpg",),
         title:Column(

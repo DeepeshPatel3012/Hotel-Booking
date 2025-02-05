@@ -22,30 +22,30 @@ class HomeScreen3 extends StatelessWidget {
             height: 200,
             width: double.infinity,
             decoration: BoxDecoration(color: Colors.deepPurple,borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              spacing: 20,
-              children: [
-                SizedBox(height: 5,),
-                Text("Booking Hotel From Any Where ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
-                // SizedBox(height: 20,),
+            // child: Column(
+            //   spacing: 20,
+            //   children: [
+            //     SizedBox(height: 5,),
+            //     Text("Booking Hotel From Any Where ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
+            //     // SizedBox(height: 20,),
 
-                Container(
-                  height: 50,
-                  width: 300,
-                  decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20)),
-                 child: Expanded(
-                   child: FloatingActionButton(onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder:(context) => SignIn01()));                   },
-                         foregroundColor: Colors.deepPurple,
-                          child: Text("Create Account",style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold, ),),
-                   ),
+            //     Container(
+            //       height: 50,
+            //       width: 300,
+            //       decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20)),
+            //      child: Expanded(
+            //        child: ElevatedButton(onPressed: (){
+            //               Navigator.push(context, MaterialPageRoute(builder:(context) => SignIn01()));                   },
+            //             //  foregroundColor: Colors.deepPurple,
+            //               child: Text("Create Account",style: TextStyle( color: Colors.deepPurple,fontSize: 20,fontWeight:FontWeight.bold, ),),
+            //        ),
                  
-                 ),
+            //      ),
                       
-                ),
-                                         Text("Alredy Have Account !!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.deepPurpleAccent,),)
-              ],
-            ),          
+            //     ),
+            //                              Text("Alredy Have Account !!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.deepPurpleAccent,),)
+            //   ],
+            // ),          
           ),
    
 

@@ -23,35 +23,35 @@ class _HomeScreen2State extends State<HomeScreen2> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           
-          Container(
-            height: 200,
-            width: double.infinity,
-            decoration: BoxDecoration(color: Colors.deepPurple,borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              spacing: 20,
-              children: [
-                SizedBox(height: 5,),
-                Text("Plan You Vacation With Hotel Hub",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
-                // SizedBox(height: 10,),
-                Container(
-                  height: 50,
-                  width: 300,
-                  decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20)),
-                 child: Expanded(
-                   child: FloatingActionButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder:(context) => SignIn01()));
-                   },
-                         foregroundColor: Colors.deepPurple,
-                          child: Text("Create Account",style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold, ),),
-                   ),
+          // Container(
+          //   height: 200,
+          //   width: double.infinity,
+          //   decoration: BoxDecoration(color: Colors.deepPurple,borderRadius: BorderRadius.circular(20)),
+          //   child: Column(
+          //     spacing: 20,
+          //     children: [
+          //       SizedBox(height: 5,),
+          //       Text("Plan You Vacation With Hotel Hub",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 20, color: Colors.deepPurpleAccent,),),
+          //       // SizedBox(height: 10,),
+          //       Container(
+          //         height: 50,
+          //         width: 300,
+          //         decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(20)),
+          //        child: Expanded(
+          //          child: FloatingActionButton(onPressed: (){
+          //           Navigator.push(context, MaterialPageRoute(builder:(context) => SignIn01()));
+          //          },
+          //                foregroundColor: Colors.deepPurple,
+          //                 child: Text("Create Account",style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold, ),),
+          //          ),
                  
-                 ),
+          //        ),
                       
-                ),
-                                         Text("Alredy Have Account !!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.deepPurpleAccent,),)
-              ],
-            ),          
-          ),
+          //       ),
+          //                                Text("Alredy Have Account !!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.deepPurpleAccent,),)
+          //     ],
+          //   ),          
+          // ),
    
 
         ],
