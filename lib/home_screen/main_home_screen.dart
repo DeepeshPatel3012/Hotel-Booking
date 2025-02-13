@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/bar/bottom_bar.dart';
-import 'package:hotel_booking/bar/top_bar.dart';
+import 'package:hotel_booking/Widget/bottom_bar.dart';
+import 'package:hotel_booking/Widget/top_bar.dart';
 import 'package:hotel_booking/home_screen/user_card.dart';
+import 'package:hotel_booking/home_screen/user_card_near.dart';
 
 
 class MainHomeScreen extends StatefulWidget {
@@ -17,21 +18,33 @@ class _MainHomeScreenState extends State<MainHomeScreen> {
     return Scaffold(
       appBar: TopBar(),
         
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 10,),
+            SearchBar(),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 20,
+                scrollDirection: Axis.horizontal,
+                padding: EdgeInsets.all(10),
+                itemBuilder: (context, index){
+                  return UserCard();
+                }
+              ),
+            ),
+                // SafeArea(child: BottomBar()),
+            ListView.builder(
               itemCount: 20,
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,              
               padding: EdgeInsets.all(10),
               itemBuilder: (context, index){
-                return UserCard();
+                return UserCardNear();
               }
             ),
-          ),
-              SafeArea(child: BottomBar()),
-
-        ],
+          ],
+        ),
       ),
       
     );
