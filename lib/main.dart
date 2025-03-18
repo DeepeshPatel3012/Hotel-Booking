@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_booking/first_screen/sign_in_screen/dilog_box_sign_in.dart';
 import 'package:hotel_booking/first_screen/sign_in_screen/sign_in01.dart';
+import 'package:hotel_booking/first_screen/sign_in_screen/sign_up_screen.dart';
 import 'package:hotel_booking/first_screen/starting_screen/home_screen0.dart';
+import 'package:hotel_booking/home_screen/chat/chat_room.dart';
+import 'package:hotel_booking/home_screen/chat/chat_screen.dart';
+import 'package:hotel_booking/home_screen/fav/fav_home.dart';
 import 'package:hotel_booking/home_screen/main_home_screen.dart';
+import 'package:hotel_booking/home_screen/offer/offer_card.dart';
+import 'package:hotel_booking/home_screen/offer/offer_screen.dart';
+import 'package:hotel_booking/home_screen/profile/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,21 +18,25 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-  
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: MainHomeScreen(),
-      
-      
-      // home: HomeScreen0(), //important home
+      // home: MainHomeScreen(),
+      // home: OfferScreen(),
+      // home: ChatScreen(),
+      // home: ProfileScreen(),
+      // home: FavHome(),
+      // home: ChatRoom(),
+      // home: SignUpScreen(),
+
+      home: HomeScreen0(), //important home
       // home: SignIn01(),
       // home: DilogBoxSignIn(),
 

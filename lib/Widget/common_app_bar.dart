@@ -64,38 +64,39 @@
 // --------------------------------------------------------------------
 import 'package:flutter/material.dart';
 
-class TopBar extends StatelessWidget implements PreferredSizeWidget {
-  const TopBar({super.key});
+class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CommonAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       backgroundColor: Colors.deepPurple,
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(350),
-        child: Image.asset(
-          "assets/images/photo.jpg",
-        ),
-      ),
+      // leading: Image.asset("assets/images/photo.jpg",),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "hii, Deepesh Kumar Patel",
+            "hii, User",
             style: TextStyle(
                 fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
             textAlign: TextAlign.center,
           ),
           Text(
-            "Loction",
+            "Location",
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           )
         ],
       ),
+
       actions: [
         IconButton(
-            onPressed: () {}, icon: Icon(Icons.message, color: Colors.white)),
+            onPressed: () {},
+            icon: Icon(
+              Icons.message,
+              color: Colors.white,
+            )),
         IconButton(
             onPressed: () {},
             icon: Icon(Icons.notifications, color: Colors.white)),
@@ -105,5 +106,5 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(80);
+  Size get preferredSize => Size.fromHeight(50);
 }
